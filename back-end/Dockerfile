@@ -26,7 +26,8 @@ RUN docker-php-ext-enable mcrypt \
     && docker-php-ext-install -j$(nproc) gd pdo_pgsql
 
 # Use the default production configuration
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" \
+    && sed -i 's/memory_limit =.*/memory_limit =-1/g' "$PHP_INI_DIR/php.ini"
 
 RUN usermod -u 1000 www-data \
     && mkdir -p /var/www/app/cache \
