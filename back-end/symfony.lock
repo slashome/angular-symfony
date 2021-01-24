@@ -156,6 +156,9 @@
     "laminas/laminas-zendframework-bridge": {
         "version": "1.0.3"
     },
+    "lcobucci/clock": {
+        "version": "2.0.0"
+    },
     "lcobucci/jwt": {
         "version": "3.3.1"
     },
@@ -288,6 +291,9 @@
     },
     "symfony/dependency-injection": {
         "version": "v4.3.8"
+    },
+    "symfony/deprecation-contracts": {
+        "version": "v2.2.0"
     },
     "symfony/doctrine-bridge": {
         "version": "v4.3.8"
@@ -445,6 +451,9 @@
     },
     "symfony/property-info": {
         "version": "v4.3.8"
+    },
+    "symfony/proxy-manager-bridge": {
+        "version": "v4.3.11"
     },
     "symfony/routing": {
         "version": "4.2",
