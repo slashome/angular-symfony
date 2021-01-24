@@ -21,4 +21,7 @@
 *composer.phar
 *composer.lock
 
+# IDE files
+.idea/
+
 node_modules
